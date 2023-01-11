@@ -1,0 +1,21 @@
+def machine():
+    keys = 'abcdefghijklmnopqrstuvwxyz !'
+    values = key [-1] + key [0:-1]
+    encrypt  = dict (zip( key, value))
+    decrypt = dict (zip ( value, key))
+    message = input ("enter your secret message")
+    mode = input ("crypto mode: encode (E) or decode (D)")
+
+    if mode.upper() == 'E':
+        message = ''.joint ([encryptdict[letter]
+                       for letter in message.lower()])
+
+    elif mode.upper() == 'D':
+        message = ''.joint ([decryptdict[letter]
+                       for letter in message.lower()])
+    else:
+        print ("please try again, wrong message entered" )
+
+        return message.capitalize()
+
+    print (machine())
